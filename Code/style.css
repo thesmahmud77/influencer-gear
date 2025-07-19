@@ -131,10 +131,22 @@ nav{
 .collection-card-wrapper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        border: 2px solid rgb(5, 5, 5);
-        padding: 15px 35px;
-        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        
 }
+.collection-card{
+     font-size: 14px;
+    font-weight: 700;
+    color: rgb(94, 99, 102);
+    border: 2px solid rgb(5, 5, 5);
+    padding: 15px 35px;
+    border-radius: 10px;
+
+
+}
+
 .c-card-main-image{
     width: 100%;
     border-radius: 10px;
@@ -154,4 +166,11 @@ nav{
 
 .card-star-wrapper{
     display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+
+}
+.card-star-wrapper img{
+    width: 200px;
 }
