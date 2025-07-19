@@ -1,13 +1,54 @@
+
+/* font Adding */
+
+
+.merriweather-normal {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Combo Class */
+.pc-black{
+    color: rgb(58, 58, 58);
+}
+.Sc-black{
+    color: rgb(120, 120, 133);
+}
+.pc{
+    color: rgb(224, 44, 109);
+}
+.display-flex{
+    display: flex;
+}
+.primary-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(224, 44, 109);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+   
+}
+
 .main-container{
     width: 1140px;
     margin: 0px auto;
 }
 
-
+/* Nav Style */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.nav-logo{
+    font-size: 24px;
+    font-weight: 700;
 }
 .nav-inner-container{
     display: flex;
@@ -16,5 +57,101 @@ nav{
 .nav-menu ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    
+}
+.nav-menu ul li{
+    margin-left: 2rem;
+}
+.nav-icon img{
+    width: 25px;
+    margin-left: 25px;
+}
+
+/* Hero Style */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: auto; */
+    margin-top: 100px;
+}
+
+.hero-content-wrapper h1{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+.hero-content-wrapper p{
+    font-size: 1.15rem;
+}
+.hero-image{
+    /* width: 100%; */
+    align-items: right;
+    text-align: right;
+}
+
+
+/* Vactor Logo Style */
+.vactor-logo-wrapper{
+    display: grid;
+    grid-template-columns:repeat(7, 1fr);
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid rgb(165, 165, 165);
+    border-bottom: 1px solid rgb(165, 165, 165);
+    padding: 20px 0px;
+    margin-top: 70px;
+    gap: 60px;
+}
+.vactor-logo-wrapper img{
+    width: 100%;
+}
+
+
+@media screen and (max-width:576px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+         height:auto;
+        gap: 50px;
+        margin-top: none;
+        align-items: center;
+    }
+    .vactor-logo-wrapper{
+        flex-direction: column;
+    }
+}
+
+/* Connection Style */
+
+
+.collection-card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid rgb(5, 5, 5);
+        padding: 15px 35px;
+        border-radius: 10px;
+}
+.c-card-main-image{
+    width: 100%;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.collection-card h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.collection-card h5{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.card-star-wrapper{
+    display: flex;
 }
